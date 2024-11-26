@@ -1,0 +1,29 @@
+{
+  "name": "timer_for_chess_sber",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@salutejs/client": "^1.18.0",
+    "@salutejs/recognizer-smartapp-brain": "^0.36.0",
+    "@salutejs/recognizer-string-similarity": "^0.36.0",
+    "@salutejs/scenario": "^0.36.0",
+    "@salutejs/storage-adapter-memory": "^0.36.0",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "lossless-json": "^2.0.9",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4",
+    "words-to-numbers": "^1.5.1"
+  }
+}
