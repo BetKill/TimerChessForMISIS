@@ -1,38 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Это проект на [Next.js](https://nextjs.org/), созданный с помощью [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Начало работы
 
-First, run the development server:
+Сначала запустите сервер разработки:
 
 ```bash
 npm run dev
-# or
+# или
 yarn dev
-# or
+# или
 pnpm dev
 ```
+Откройте http://localhost:3000 в браузере, чтобы увидеть результат.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Вы можете начать редактировать страницу, изменяя файл pages/index.tsx. Страница будет автоматически обновляться при изменении файла.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+API маршруты доступны по адресу http://localhost:3000/api/hello. Этот endpoint можно редактировать в файле pages/api/hello.ts.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Директория pages/api сопоставляется с /api/*. Файлы в этой директории обрабатываются как API маршруты, а не страницы React.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Этот проект использует next/font для автоматической оптимизации и загрузки шрифта Inter, предоставляемого Google.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Узнать больше
+Чтобы узнать больше о Next.js, ознакомьтесь с следующими ресурсами:
 
-## Learn More
+Документация Next.js — изучите возможности и API Next.js.
+Учебник по Next.js — интерактивный учебник по Next.js.
+Вы также можете заглянуть в репозиторий Next.js на GitHub — ваши отзывы и вклад приветствуются!
 
-To learn more about Next.js, take a look at the following resources:
+Развертывание на Vercel
+Самый простой способ развернуть ваше приложение на Next.js — это использовать платформу Vercel, созданную разработчиками Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Подробнее об развертывании можно прочитать в документации по развертыванию Next.js.
