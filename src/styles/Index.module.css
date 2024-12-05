@@ -1,69 +1,92 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1a1a2e;
+  height: 100vh;
+  width: 100%;
 }
 
 .buttonContainer {
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 8vh;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
 }
 
 .resetButton {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: none;
+  background-color: #0f3460;
+  border: 2px solid #e94560;
+  border-radius: 12px;
+  padding: 10px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.resetButton:hover {
+  background-color: #e94560;
+  transform: scale(1.1);
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
-  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
 }
 
 .timer-wrapper {
-  width: 100%;
-  height: 30vh;
+  width: 90%;
+  height: auto;
+  max-height: 400px;
+  background-color: #16213e;
+  border: 2px solid #0f3460;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (orientation: landscape) {
   .container {
-    display: flex;
+    grid-template-columns: 1fr 3fr;
     height: 100%;
-    width: 100%;
-    flex-direction: row;
-  }
-
-  .timer-wrapper {
-    width: 100%;
-    height: 100vh;
+    gap: 10px;
   }
 
   .buttonContainer {
-    margin-top: 5px;
-    margin-bottom: 5px;
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: 10;
+  }
+
+  .timer-wrapper {
+    width: 45%;
+    height: 100%;
+  }
+
+  .resetButton {
+    padding: 15px;
   }
 
   .icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 0;
+    width: 60px;
+    height: 60px;
   }
 }
 
-@media (min-height: 1000px) { 
+@media (min-height: 1000px) {
   .icon {
-    width: 120px;
-    height: 120px;
-    margin-right: 5px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .resetButton {
+    padding: 20px;
   }
 }
